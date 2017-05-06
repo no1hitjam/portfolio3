@@ -20,19 +20,22 @@
 .Home-row {
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
 }
 
 .Home-entry {
   color: #222;
+  font-weight: bold;
   text-decoration: underline;
 
   background-color: #ddd;
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 100px;
+  padding: 10px;
+  vertical-align: bottom;
   
-  text-align: left;
-  display: inline-block;
+  display: table-cell;
 }
 
 .Home-entry:link, .Home-entry:visited {
@@ -43,9 +46,18 @@
   background-color: #eee;
 }
 
+.Home-game {
+  font-size: small;
+  width: 130px;
+}
 
+.Home-entry-main {
+  font-size: x-large;
+  text-align: left;
+  padding-left: 30px;
+  margin-bottom: 10px;
+}
 
-.Home-entry {
-  display: inline-block;
-  
+#Home-entry-games {
+  width: 260px;
 }

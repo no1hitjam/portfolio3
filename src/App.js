@@ -10,17 +10,19 @@ class App extends Component {
         <div>
           <div className="Home-row">
             <a href="./games">
-              <span className="Home-entry">
-                Games
+              <span className="Home-entry Home-entry-main">
+                <p id="Home-entry-games">
+                  Games
+                </p>
               </span>
             </a>
             <a href="./games">
-              <span className="Home-entry">
-                OK K.O. Dynamite's Action News
+              <span className="Home-entry Home-game">
+                OK K.O.: Dynamite's<br /> Action News
               </span>
             </a>
             <a href="./games">
-              <span className="Home-entry">
+              <span className="Home-entry Home-game">
                 Canvasser
               </span>
             </a>
