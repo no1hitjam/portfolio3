@@ -63,12 +63,20 @@
 .Home-game {
   font-size: small;
   width: 132px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .Home-language {
-  width: 88px;
-  padding-left: 8px;
-  padding-right: 8px;
+  width: 90px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.Home-gram {
+  width: 94px;
+  padding-left: 4px;
+  padding-right: 4px;
+  background-size: 150px; 
+  background-position: center;
 }

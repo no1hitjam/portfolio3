@@ -54,16 +54,31 @@ class App extends Component {
             </a>
           </div>
           <div className="Home-row">
-            <a href="#">
+            <a href="https://www.instagram.com/moon_dude/">
               <span className="Home-entry Home-entry-main">
                 Fine Art
               </span>
             </a>
+            <GramImage img='gram-guitar' link='BTPZLIyhK9h' />
+            <GramImage img='gram-sketch' link='BTiLjMSBwvU' />
+            <GramImage img='gram-garden' link='BD_-PWKot1S' />
           </div>
         </div>
       </div>
     );
   }
+}
+
+
+function GramImage(props) {
+  return (
+    <a href={'https://www.instagram.com/p/' + props.link + '/?taken-by=moon_dude'}>
+      <span 
+        className="Home-entry Home-gram"
+        style={{backgroundImage: 'url(img/' + props.img + '.JPG)'}}
+      ></span>
+    </a>
+  )
 }
 
 export default App;
