@@ -7,6 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <SimpleHeader />
+        (this site is under construction)
         <div>
           <div className="Home-row">
             <a href="./games">
