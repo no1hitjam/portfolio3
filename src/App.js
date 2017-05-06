@@ -7,9 +7,17 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and DONT save to reload.
-        </p>
+        <div>
+          <div className="Home-entry">
+            <a href="./games">Games</a>
+          </div>
+          <div className="Home-entry">
+            <a href="./programming">Programming Resume</a>
+          </div>
+          <div className="Home-entry">
+            <a href="#">Fine Art</a>
+          </div>
+        </div>
       </div>
     );
   }
