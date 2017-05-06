@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Header } from './Header.js';
+import { SimpleHeader } from './Header.js';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
+        <SimpleHeader />
         <div>
           <div className="Home-row">
             <a href="./games">
@@ -27,16 +27,34 @@ class App extends Component {
               </span>
             </a>
           </div>
+
           <div className="Home-row">
             <a href="./programming">
-              <span className="Home-entry">
-                Programming Resume
+              <span className="Home-entry Home-entry-main">
+                <p id="Home-entry-resume">
+                  Programming Resume
+                </p>
+              </span>
+            </a>
+            <a href="./programming">
+              <span className="Home-entry Home-language">
+                C#
+              </span>
+            </a>
+            <a href="./programming">
+              <span className="Home-entry Home-language">
+                JavaScript
+              </span>
+            </a>
+            <a href="./programming">
+              <span className="Home-entry Home-language">
+                SQL
               </span>
             </a>
           </div>
           <div className="Home-row">
             <a href="#">
-              <span className="Home-entry">
+              <span className="Home-entry Home-entry-main">
                 Fine Art
               </span>
             </a>

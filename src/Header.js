@@ -14,3 +14,11 @@ export function Header(props) {
     </div>
   )
 }
+
+export function SimpleHeader(props) {
+  return (
+    <div className="App-header App-header-simple">
+      <h2>Jackson Lango</h2>
+    </div>
+  )
+}

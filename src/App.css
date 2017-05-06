@@ -11,6 +11,10 @@
   color: white;
 }
 
+.App-header-simple {
+  height: 70px;
+}
+
 .App-header a {
   color: #fff;
   margin-left: 10px;
@@ -32,7 +36,8 @@
 
   background-color: #ddd;
   height: 100px;
-  padding: 10px;
+  padding: 12px;
+  
   vertical-align: bottom;
   
   display: table-cell;
@@ -46,18 +51,24 @@
   background-color: #eee;
 }
 
-.Home-game {
-  font-size: small;
-  width: 130px;
-}
-
 .Home-entry-main {
   font-size: x-large;
   text-align: left;
-  padding-left: 30px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-bottom: 10px;
+  width: 264px;
 }
 
-#Home-entry-games {
-  width: 260px;
+.Home-game {
+  font-size: small;
+  width: 132px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.Home-language {
+  width: 88px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
