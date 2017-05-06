@@ -17,17 +17,35 @@
   margin-right: 10px;
 }
 
+.Home-row {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 .Home-entry {
+  color: #222;
+  text-decoration: underline;
+
   background-color: #ddd;
-  max-width: 500px;
   padding: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  
   text-align: left;
+  display: inline-block;
 }
 
-.Home-entry a {
-  font-weight: bold;
+.Home-entry:link, .Home-entry:visited {
+  background-color: #ccc;
+}
+
+.Home-entry:hover {
+  background-color: #eee;
+}
+
+
+
+.Home-entry {
+  display: inline-block;
+  
 }

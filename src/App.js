@@ -8,14 +8,36 @@ class App extends Component {
       <div className="App">
         <Header />
         <div>
-          <div className="Home-entry">
-            <a href="./games">Games</a>
+          <div className="Home-row">
+            <a href="./games">
+              <span className="Home-entry">
+                Games
+              </span>
+            </a>
+            <a href="./games">
+              <span className="Home-entry">
+                OK K.O. Dynamite's Action News
+              </span>
+            </a>
+            <a href="./games">
+              <span className="Home-entry">
+                Canvasser
+              </span>
+            </a>
           </div>
-          <div className="Home-entry">
-            <a href="./programming">Programming Resume</a>
+          <div className="Home-row">
+            <a href="./programming">
+              <span className="Home-entry">
+                Programming Resume
+              </span>
+            </a>
           </div>
-          <div className="Home-entry">
-            <a href="#">Fine Art</a>
+          <div className="Home-row">
+            <a href="#">
+              <span className="Home-entry">
+                Fine Art
+              </span>
+            </a>
           </div>
         </div>
       </div>
