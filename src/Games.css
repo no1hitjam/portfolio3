@@ -1,0 +1,18 @@
+.Game-entry {
+  font-size: small;
+  text-align: left;
+  
+  background-color: #ddd;
+  max-width: 600px;
+  padding: 12px;
+  margin: auto;
+  margin-bottom: 2em;
+}
+
+.Game-entry div {
+  margin-bottom: .5em;
+}
+
+.Game-entry a {
+  text-decoration: underline;
+}

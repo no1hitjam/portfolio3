@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  color: #222;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
 }
 
 .App-header {
@@ -9,6 +15,14 @@
   margin: 7px;
   margin-bottom: 50px;
   color: white;
+}
+
+.App-header img {
+  width: 20px;
+}
+
+.App-header a {
+
 }
 
 .App-header-simple {
@@ -21,91 +35,6 @@
   margin-right: 10px;
 }
 
-/* Home */
-
-.Home-row {
-  margin-top: 40px;
-  margin-bottom: 40px;
-  margin-left: 7px;
-  margin-right: 7px;
-  vertical-align: middle;
-}
-
-.Home-entry {
-  color: #222;
-  font-weight: bold;
-  text-decoration: underline;
-
-  background-color: #ddd;
-  height: 75px;
-  padding: 12px;
-  
-  vertical-align: bottom;
-  
-  display: table-cell;
-}
-
-.Home-entry:link, .Home-entry:visited {
-  background-color: #ccc;
-}
-
-.Home-entry:hover {
-  background-color: #eee;
-}
-
-.Home-entry-main {
-  font-size: x-large;
-  text-align: left;
-  padding-left: 24px;
-  padding-right: 24px;
-  margin-bottom: 10px;
-  margin-top: 0px;
-  width: 264px;
-}
-
-/* games */
-
-.Home-game.Home-entry-item {
-  font-size: small;
-  width: 140px;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.Home-game {
-  height: 120px;
-}
-
-/* grams */
-
-.Home-gram {
-  height: 90px;
-}
-
-.Home-gram.Home-entry-item {
-  width: 96px;
-  padding-left: 4px;
-  padding-right: 4px;
-  background-size: 150px; 
-  background-position: center;
-  -webkit-filter: brightness(100%);
-  filter: brightness(100%);
-}
-
-.Home-gram:hover {
-  -webkit-filter: brightness(120%);
-  filter: brightness(120%);
-}
-
-
-/* programming */
-
-.Home-program {
-  height: 60px;
-}
-
-.Home-program.Home-entry-item {
-  width: 96px;
-  padding-left: 4px;
-  padding-right: 4px;
+.App-header h2 {
+  margin: 0;
 }
