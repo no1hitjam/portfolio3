@@ -21,6 +21,8 @@
   margin-right: 10px;
 }
 
+/* Home */
+
 .Home-row {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -51,10 +53,6 @@
   background-color: #eee;
 }
 
-.Home-entry-big {
-  height: 120px;
-}
-
 .Home-entry-main {
   font-size: x-large;
   text-align: left;
@@ -65,20 +63,26 @@
   width: 264px;
 }
 
-.Home-game {
+/* games */
+
+.Home-game.Home-entry-item {
   font-size: small;
   width: 140px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
-.Home-language {
-  width: 96px;
-  padding-left: 4px;
-  padding-right: 4px;
+.Home-game {
+  height: 120px;
 }
 
+/* grams */
+
 .Home-gram {
+  height: 90px;
+}
+
+.Home-gram.Home-entry-item {
   width: 96px;
   padding-left: 4px;
   padding-right: 4px;
@@ -91,4 +95,17 @@
 .Home-gram:hover {
   -webkit-filter: brightness(120%);
   filter: brightness(120%);
+}
+
+
+/* programming */
+
+.Home-program {
+  height: 60px;
+}
+
+.Home-program.Home-entry-item {
+  width: 96px;
+  padding-left: 4px;
+  padding-right: 4px;
 }

@@ -16,18 +16,18 @@ class App extends Component {
         <div>
           <div className="Home-row">
             <a href="./games">
-              <span className="Home-entry Home-entry-main Home-entry-big">
+              <span className="Home-entry Home-game Home-entry-main">
                 Games
               </span>
             </a>
             <span style={{display: 'inline-block'}}>
               <a href="./games">
-                <span className="Home-entry Home-game Home-entry-big">
+                <span className="Home-entry Home-game Home-entry-item">
                   OK K.O.: Dynamite's<br /> Action News
                 </span>
               </a>
               <a href="./games">
-                <span className="Home-entry Home-game Home-entry-big">
+                <span className="Home-entry Home-game Home-entry-item">
                   Canvasser
                 </span>
               </a>
@@ -35,32 +35,8 @@ class App extends Component {
           </div>
 
           <div className="Home-row">
-            <a href="./programming">
-              <span className="Home-entry Home-entry-main">
-                Programming Resume
-              </span>
-            </a>
-            <span style={{display: 'inline-block'}}>
-              <a href="./programming">
-                <span className="Home-entry Home-language">
-                  C#
-                </span>
-              </a>
-              <a href="./programming">
-                <span className="Home-entry Home-language">
-                  JavaScript
-                </span>
-              </a>
-              <a href="./programming">
-                <span className="Home-entry Home-language">
-                  SQL
-                </span>
-              </a>
-            </span>
-          </div>
-          <div className="Home-row">
             <a href="https://www.instagram.com/moon_dude/">
-              <span className="Home-entry Home-entry-main">
+              <span className="Home-entry Home-gram Home-entry-main">
                 Fine Art <img style={{width: '50px'}} src={instagramImg} />
               </span>
             </a>
@@ -68,6 +44,31 @@ class App extends Component {
               <GramImage img={gramImg1} link='BTPZLIyhK9h' />
               <GramImage img={gramImg2} link='BTiLjMSBwvU' />
               <GramImage img={gramImg3} link='BD_-PWKot1S' />
+            </span>
+          </div>
+
+          <div className="Home-row">
+            <a href="./programming">
+              <span className="Home-entry Home-program Home-entry-main">
+                Programming Resume
+              </span>
+            </a>
+            <span style={{display: 'inline-block'}}>
+              <a href="./programming">
+                <span className="Home-entry Home-program Home-entry-item">
+                  C#
+                </span>
+              </a>
+              <a href="./programming">
+                <span className="Home-entry Home-program Home-entry-item">
+                  JavaScript
+                </span>
+              </a>
+              <a href="./programming">
+                <span className="Home-entry Home-program Home-entry-item">
+                  SQL
+                </span>
+              </a>
             </span>
           </div>
         </div>
@@ -81,7 +82,7 @@ function GramImage(props) {
   return (
     <a href={'https://www.instagram.com/p/' + props.link + '/?taken-by=moon_dude'}>
       <span 
-        className="Home-entry Home-gram" 
+        className="Home-entry Home-gram Home-entry-item" 
         style={{backgroundImage: 'url(' + props.img + ')'}}
       ></span>
     </a>
