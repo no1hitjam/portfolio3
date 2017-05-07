@@ -35,7 +35,7 @@
   text-decoration: underline;
 
   background-color: #ddd;
-  height: 100px;
+  height: 75px;
   padding: 12px;
   
   vertical-align: bottom;
@@ -51,32 +51,44 @@
   background-color: #eee;
 }
 
+.Home-entry-big {
+  height: 120px;
+}
+
 .Home-entry-main {
   font-size: x-large;
   text-align: left;
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 10px;
+  margin-top: 0px;
   width: 264px;
 }
 
 .Home-game {
   font-size: small;
-  width: 132px;
+  width: 140px;
   padding-left: 8px;
   padding-right: 8px;
 }
 
 .Home-language {
-  width: 90px;
+  width: 96px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
 .Home-gram {
-  width: 94px;
+  width: 96px;
   padding-left: 4px;
   padding-right: 4px;
   background-size: 150px; 
   background-position: center;
+  -webkit-filter: brightness(100%);
+  filter: brightness(100%);
+}
+
+.Home-gram:hover {
+  -webkit-filter: brightness(120%);
+  filter: brightness(120%);
 }
