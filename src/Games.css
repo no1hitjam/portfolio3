@@ -77,7 +77,6 @@
 }
 
 .Game-link {
-  color: #fff;
   background-color: #699ab8;
   font-weight: bold;
   
@@ -106,7 +105,8 @@
 }
 
 .Game-info a {
-  text-decoration: underline;
+  color: #222;
+  border-bottom: 2px solid #fff;
 }
 
 .roles {
@@ -130,3 +130,6 @@
   line-height: 2em;
 }
 
+.quoteLink {
+  text-decoration: none;
+}

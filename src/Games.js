@@ -30,7 +30,7 @@ class Game extends Component {
     const quotes = this.props.quotes.map((val, idx) => {
       const ltext = idx > 0 ? ' l' + (idx + 1) : '';
       return (
-        <a href={val.link}>
+        <a className="quoteLink" href={val.link}>
           <div className={"Game-link quote" + ltext}>
             {val.quote}
           </div>
@@ -96,11 +96,11 @@ export class Games extends Component {
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
           personal="I built this game after the unforgettable experiences I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
           quotes={[
-            { quote: ["\"Through its mechanics, Canvasser presents an unbiased perspective on the occupation of canvassing (on-foot fundraising), illustrating both the highs and lows of the job without being heavy-handed or overly critical.\"", <br />, "—Alexander Feigenbaum"],
+            { quote: ["\"Through its mechanics, Canvasser presents an unbiased perspective on the occupation of canvassing (on-foot fundraising), illustrating both the highs and lows of the job without being heavy-handed or overly critical.\"", <br />, <u>—Alexander Feigenbaum</u>],
               link: "http://amadeusgamezart.wordpress.com/2013/06/27/canvasser-subtlety-in-mechanics/" },
-            { quote: ["\"...Just might make you think twice the next time you go to reflexively brush that person on the street corner with the clipboard off.\"", <br />, "—Dora at jayisgames.com"],
+            { quote: ["\"...Just might make you think twice the next time you go to reflexively brush that person on the street corner with the clipboard off.\"", <br />, <u>—Dora at jayisgames.com</u>],
               link: "http://jayisgames.com/archives/2013/05/canvasser.php"},
-            { quote: "Dom Plays Canvasser - Save The Forest! (video)",
+            { quote: <u>Dom Plays Canvasser - Save The Forest! (video)</u>,
               link: "https://www.youtube.com/watch?v=FIJ03aQ8Cyk" },
           ]}
         />  

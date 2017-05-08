@@ -11,7 +11,7 @@
   
   font-weight: bold;
 
-  background-color: #ddd;
+  background-color: #246;
   height: 75px;
   padding: 12px;
   
@@ -21,11 +21,11 @@
 }
 
 .Home-entry:link, .Home-entry:visited {
-  background-color: #ccc;
+  background-color: #246;
 }
 
 .Home-entry:hover {
-  background-color: #eee;
+  background-color: #468;
 }
 
 .Home-entry-main {
@@ -39,8 +39,8 @@
 }
 
 .Home-entry-main-link a, .Home-entry-main-link:link {
+  color: #222;
   text-decoration: none;
-  border-bottom: 2px solid #9cdbe4;
 }
 
 .Home-info {
@@ -55,7 +55,6 @@
 }
 
 .Home-game.Home-entry-item {
-  color: #fff;
   font-size: .9em;
   width: 140px;
   padding-left: 8px;
@@ -71,7 +70,7 @@
 }
 
 .Home-game-item-link:link {
-  text-decoration: none;
+  
 }
 
 
