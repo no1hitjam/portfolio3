@@ -44,7 +44,7 @@ class Game extends Component {
           className="Game-img-container"
           style={{backgroundImage: 'url(' + this.props.img + ')'}}>
           <div className="Game-header">
-            <h3>{this.props.name}</h3>
+            <h4>{this.props.name}</h4>
             <span className="Game-date">({this.props.date})</span>
             {tags}
           </div>
@@ -70,11 +70,12 @@ export class Games extends Component {
   render() {
     return (
       <div className="Games">
+        <h3>Games</h3>
         <Game
           name="OK K.O.! Dynamite's Action News" 
           img={canvasserImg}
           date={2017}
-          tags={['Unity', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
+          tags={['Unity3D', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
           links={['Android Download', 'iOS Download', 'Amazon Download']}
           desc={["This is a fast-paced casual game where you play as star reporter Dynamite Watkins in the universe of Cartoon Network's ", <a href='#'>OK K.O.! Let's Be Heroes</a>, "! Uncover the secrets of the evil fog by getting big question combos and don't let the bad guys get away with it!"]}
           roles={['Programmer', 'Writer', 'Game Design', 'UI Design']}
@@ -103,6 +104,18 @@ export class Games extends Component {
               link: "https://www.youtube.com/watch?v=FIJ03aQ8Cyk" },
           ]}
         />  
+
+        <Game
+          name="Monster Buds"
+          img={canvasserImg}
+          date={2016}
+          tags={['Unity3D', 'C#', 'Web', 'Open-ended', 'Life-Sim', 'Crafting']}
+          links={['Download from Itch.io']}
+          desc="You've moved into a new neighborhood, and the bad news is that all your neighbors are monsters! The good news is that they're pretty chill. Collect things, build paths, fences, and live your life the monster way!"
+          roles={['Programmer, Game Design, Environmental Artist']}
+          personal="This was made for the 2016 Game Boy Jam with Conley Smith and Nathan Franks. You might think of it as an Animal Crossing de-make. We wanted to see what the simplest form of that genre would look like."
+          quotes={[]}
+        />
       </div>
     )
   }

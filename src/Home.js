@@ -16,29 +16,29 @@ export class Home extends Component {
     return (
       <div className="Home">
         <div className="Home-row">
-          <Link to="/games">
+          <Link className="Home-entry-main-link" to="/games">
             <span className="Home-entry Home-game Home-entry-main">
               Games <span className="Home-info">(you can play!)</span>
             </span>
           </Link>
           <span style={{display: 'inline-block'}}>
-            <a href="./games">
-              <span className="Home-entry Home-game Home-entry-item">
+            <Link className="Home-game-item-link" to="/games">
+              <span className="Home-entry Home-game Home-entry-item l1">
                 OK K.O.: Dynamite's<br /> Action News
               </span>
-            </a>
-            <a href="./games">
+            </Link>
+            <Link className="Home-game-item-link" to="/games">
               <span 
-              className="Home-entry Home-game Home-entry-item"
+              className="Home-entry Home-game Home-entry-item l2"
               style={{backgroundImage: 'url(' + canvasserImg + ')'}}>
                 Canvasser
               </span>
-            </a>
+            </Link>
           </span>
         </div>
 
         <div className="Home-row">
-          <a href="https://www.instagram.com/moon_dude/">
+          <a className="Home-entry-main-link" href="https://www.instagram.com/moon_dude/">
             <span className="Home-entry Home-gram Home-entry-main">
               Fine Art <span className="Home-info">(on Instagram)</span>
             </span>
@@ -51,11 +51,11 @@ export class Home extends Component {
         </div>
 
         <div className="Home-row">
-          <a href="./programming">
+          <Link className="Home-entry-main-link" to="/programming">
             <span className="Home-entry Home-program Home-entry-main">
               Programming <span className="Home-info">(resume)</span>
             </span>
-          </a>
+          </Link>
           <span style={{display: 'inline-block'}}>
             <a href="./programming">
               <span className="Home-entry Home-program Home-entry-item">

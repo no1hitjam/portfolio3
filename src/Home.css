@@ -38,6 +38,11 @@
   width: 264px;
 }
 
+.Home-entry-main-link a, .Home-entry-main-link:link {
+  text-decoration: none;
+  border-bottom: 2px solid #9cdbe4;
+}
+
 .Home-info {
   font-size: small;
   font-style: italic;
@@ -51,7 +56,7 @@
 
 .Home-game.Home-entry-item {
   color: #fff;
-  font-size: small;
+  font-size: .9em;
   width: 140px;
   padding-left: 8px;
   padding-right: 8px;
@@ -64,6 +69,12 @@
   -webkit-filter: brightness(120%);
   filter: brightness(120%);
 }
+
+.Home-game-item-link:link {
+  text-decoration: none;
+}
+
+
 
 /* grams */
 

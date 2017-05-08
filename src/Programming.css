@@ -7,9 +7,10 @@
   text-align: left;
 }
 
-.Project h3 {
+.Project h4 {
   padding: 1em;
   padding-bottom: 0;
+  margin-bottom: .5em;
 }
 
 .Project table {
@@ -31,10 +32,11 @@
 }
 
 .Project-item {
+  font-size: .9em;
   padding: 1em;
 }
 
-.Project-year {
-  width: 5em;
+.Project-date {
+  font-style: italic;
   text-align: right;
 }
