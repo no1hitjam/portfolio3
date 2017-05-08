@@ -1,0 +1,40 @@
+.Project {
+  background-color: #eee;
+  margin: auto;
+  margin-bottom: 3em;
+  width: 90%;
+  max-width: 600px;
+  text-align: left;
+}
+
+.Project h3 {
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.Project table {
+  width: 100%;
+}
+
+.Project-tags {
+  background-color: #ccc;
+}
+
+.Project-tag {
+  padding: .5em 1.3em;
+  background-color: #ccc;
+  display: inline-block;
+}
+
+.Project-tag:hover {
+  background-color: #ddd;
+}
+
+.Project-item {
+  padding: 1em;
+}
+
+.Project-year {
+  width: 5em;
+  text-align: right;
+}

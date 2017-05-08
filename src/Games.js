@@ -7,7 +7,7 @@ class Game extends Component {
   render() {
     const tags = this.props.tags.map((val, idx) =>{
       return (
-        <span className="tag">{val}</span>
+        <span className="Game-tag">{val}</span>
       )
     });
 
@@ -45,7 +45,7 @@ class Game extends Component {
           style={{backgroundImage: 'url(' + this.props.img + ')'}}>
           <div className="Game-header">
             <h3>{this.props.name}</h3>
-            <span className="date">({this.props.date})</span>
+            <span className="Game-date">({this.props.date})</span>
             {tags}
           </div>
         </div>
@@ -93,7 +93,7 @@ export class Games extends Component {
           links={['Play Online!']}
           desc="Grab your clipboard and brush up on your social skills: It’s time to raise money on the streets for charity! Canvasser is a persuasion game, and it’s all about getting the most donations possible before the day ends. Can you sustain interest, trust, and get your town to care about Evergreen Forest before it’s too late?"
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
-          personal="I built this game after the unforgettable experience I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
+          personal="I built this game after the unforgettable experiences I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
           quotes={[
             { quote: ["\"Through its mechanics, Canvasser presents an unbiased perspective on the occupation of canvassing (on-foot fundraising), illustrating both the highs and lows of the job without being heavy-handed or overly critical.\"", <br />, "—Alexander Feigenbaum"],
               link: "http://amadeusgamezart.wordpress.com/2013/06/27/canvasser-subtlety-in-mechanics/" },

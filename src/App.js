@@ -9,6 +9,7 @@ import './App.css';
 import { Header } from './Header.js';
 import { Home } from './Home.js';
 import { Games } from './Games.js';
+import { Programming } from './Programming.js';
 
 
 
@@ -20,6 +21,7 @@ class App extends Component {
           <Header />
           <Route exact path="/" component={Home} />
           <Route path="/games" component={Games} />
+          <Route path="/programming" component={Programming} />
 
           <Route exact path="/portfolio3" component={Home} />
         </div>
