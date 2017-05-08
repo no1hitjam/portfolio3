@@ -31,7 +31,7 @@ class Game extends Component {
       const ltext = idx > 0 ? ' l' + (idx + 1) : '';
       return (
         <a href={val.link}>
-          <div className={"Game-link writing" + ltext}>
+          <div className={"Game-link quote" + ltext}>
             {val.quote}
           </div>
         </a>
@@ -53,7 +53,7 @@ class Game extends Component {
           <table><tbody><tr>{links}</tr></tbody></table>
           <div className="Game-info desc">{this.props.desc}</div>
           <div className="Game-info roles">
-            <span>My Roles: </span> 
+            <span style={{fontStyle: 'italic'}}>My Roles: </span> 
             {roles}
           </div>
           <div className="Game-info personal">{this.props.personal}</div>
@@ -71,7 +71,7 @@ export class Games extends Component {
     return (
       <div className="Games">
         <Game
-          name="OK K.O.! Dynamite's Action News!" 
+          name="OK K.O.! Dynamite's Action News" 
           img={canvasserImg}
           date={2017}
           tags={['Unity', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
@@ -95,9 +95,9 @@ export class Games extends Component {
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
           personal="I built this game after the unforgettable experience I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
           quotes={[
-            { quote: "\"Through its mechanics, Canvasser presents an unbiased perspective on the occupation of canvassing (on-foot fundraising), illustrating both the highs and lows of the job without being heavy-handed or overly critical.\"\n—Alexander Feigenbaum",
+            { quote: ["\"Through its mechanics, Canvasser presents an unbiased perspective on the occupation of canvassing (on-foot fundraising), illustrating both the highs and lows of the job without being heavy-handed or overly critical.\"", <br />, "—Alexander Feigenbaum"],
               link: "http://amadeusgamezart.wordpress.com/2013/06/27/canvasser-subtlety-in-mechanics/" },
-            { quote: "...Just might make you think twice the next time you go to reflexively brush that person on the street corner with the clipboard off.\"\n—Dora at jayisgames.com",
+            { quote: ["\"...Just might make you think twice the next time you go to reflexively brush that person on the street corner with the clipboard off.\"", <br />, "—Dora at jayisgames.com"],
               link: "http://jayisgames.com/archives/2013/05/canvasser.php"},
             { quote: "Dom Plays Canvasser - Save The Forest! (video)",
               link: "https://www.youtube.com/watch?v=FIJ03aQ8Cyk" },

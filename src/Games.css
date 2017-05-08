@@ -118,6 +118,12 @@ table {
   margin-right: .6em;
 }
 
-.writing {
+.quote {
   padding: 1.5em 1.5em;
+  line-height: 1.2em;
 }
+
+.quote br {
+  line-height: 2em;
+}
+
