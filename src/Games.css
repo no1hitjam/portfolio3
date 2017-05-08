@@ -1,18 +1,115 @@
-.Game-entry {
-  font-size: small;
+.Game img {
+  width: 100%;
+}
+
+.Game-img-container {
+  position: relative;
+
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+
+  margin-bottom: 0px;
+  background-position: center;
+  height: 225px;
+  overflow: hidden;
+}
+
+.Game-header {
+  color: #fff;
   text-align: left;
+  background-color: #00082e;
+  opacity: .8;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px;
+  
+  padding: 10px 15px;
+}
+
+.Game-header h3 {
+  font-size: x-large;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.date {
+  margin-right: 5%;
+  font-size: small;
+}
+
+.tag {
+  margin-right: 3%;
+  font-size: small;
+}
+
+
+.Game-entry {
+  font-size: .9em;
+  text-align: left;
+
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
   
   background-color: #ddd;
-  max-width: 600px;
-  padding: 12px;
-  margin: auto;
+  
   margin-bottom: 2em;
+  overflow: visible;
 }
 
-.Game-entry div {
-  margin-bottom: .5em;
+table, tbody, tr, th, td {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.Game-entry a {
+.Game-link {
+  color: #fff;
+  background-color: #699ab8;
+  font-weight: bold;
+  
+
+  width: 100%;
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.l2 {
+  background-color: #4f85a6;
+}
+
+.l3 {
+  background-color: #406c86;
+}
+
+.Game-link:hover {
+ background-color: #88c1e4;
+}
+
+.Game-info {
+  background-color: #ddd;
+  line-height: 1.35em;
+  padding: 10px 10px;
+}
+
+.Game-info a {
   text-decoration: underline;
+}
+
+.roles {
+  color: #fff;
+  font-style: italic;
+  background-color: #406c86;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.roles span {
+  margin-right: 2%;
 }

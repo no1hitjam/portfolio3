@@ -9,6 +9,8 @@ import gramImg1 from './img/gram-guitar.jpg';
 import gramImg2 from './img/gram-sketch.jpg';
 import gramImg3 from './img/gram-garden.jpg';
 
+import canvasserImg from './img/home-canvasser.png';
+
 export class Home extends Component {
   render() {
     return (
@@ -26,7 +28,9 @@ export class Home extends Component {
               </span>
             </a>
             <a href="./games">
-              <span className="Home-entry Home-game Home-entry-item">
+              <span 
+              className="Home-entry Home-game Home-entry-item"
+              style={{backgroundImage: 'url(' + canvasserImg + ')'}}>
                 Canvasser
               </span>
             </a>
