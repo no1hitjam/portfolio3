@@ -9,7 +9,7 @@
 .Game-img-container {
   position: relative;
 
-  width: 80%;
+  width: 90%;
   max-width: 600px;
   margin: auto;
 
@@ -26,9 +26,10 @@
   opacity: .8;
   position: absolute;
   bottom: 0px;
+  left: 0px;
   margin-bottom: 0px;
-  
   padding: 10px 15px;
+  display: inline-block;
 }
 
 .Game-header h3 {
@@ -40,11 +41,13 @@
 .date {
   margin-right: 5%;
   font-size: small;
+  display: inline-block;
 }
 
 .tag {
   margin-right: 3%;
   font-size: small;
+  display: inline-block;
 }
 
 
@@ -98,7 +101,7 @@ table {
 .Game-info {
   background-color: #ddd;
   line-height: 1.35em;
-  padding: 10px 10px;
+  padding: 1.1em 1.5em;
 }
 
 .Game-info a {
@@ -106,10 +109,9 @@ table {
 }
 
 .roles {
-  font-size: .9em;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 2px;
+  font-size: .8em;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   padding-top: 5px;
   padding-bottom: 5px;
 }
