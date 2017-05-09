@@ -9,7 +9,8 @@ import gramImg1 from './img/gram-guitar.jpg';
 import gramImg2 from './img/gram-sketch.jpg';
 import gramImg3 from './img/gram-garden.jpg';
 
-import canvasserImg from './img/home-canvasser.png';
+import canvasserImg from './img/home-canvasser.jpg';
+import actionNewsImg from './img/home-actionnews.jpg';
 
 export class Home extends Component {
   render() {
@@ -23,13 +24,15 @@ export class Home extends Component {
           </Link>
           <span style={{display: 'inline-block'}}>
             <Link className="Home-game-item-link" to="/games">
-              <span className="Home-entry Home-game Home-entry-item l1">
-                OK K.O.: Dynamite's<br /> Action News
+              <span
+              className="Home-entry Home-game Home-entry-item l2"
+              style={{backgroundImage: 'url(' + actionNewsImg + ')'}}>
+                OK K.O.! Dynamite's<br /> Action News
               </span>
             </Link>
             <Link className="Home-game-item-link" to="/games">
               <span 
-              className="Home-entry Home-game Home-entry-item l2"
+              className="Home-entry Home-game Home-entry-item l3"
               style={{backgroundImage: 'url(' + canvasserImg + ')'}}>
                 Canvasser
               </span>
@@ -58,17 +61,17 @@ export class Home extends Component {
           </Link>
           <span style={{display: 'inline-block'}}>
             <a href="./programming">
-              <span className="Home-entry Home-program Home-entry-item">
+              <span className="Home-entry Home-program Home-entry-item l2">
                 C#
               </span>
             </a>
             <a href="./programming">
-              <span className="Home-entry Home-program Home-entry-item">
+              <span className="Home-entry Home-program Home-entry-item l3">
                 JavaScript
               </span>
             </a>
             <a href="./programming">
-              <span className="Home-entry Home-program Home-entry-item">
+              <span className="Home-entry Home-program Home-entry-item l4">
                 SQL
               </span>
             </a>

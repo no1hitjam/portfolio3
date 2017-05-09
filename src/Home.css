@@ -11,7 +11,7 @@
   
   font-weight: bold;
 
-  background-color: #246;
+  background-color: #eee;
   height: 75px;
   padding: 12px;
   
@@ -20,17 +20,29 @@
   display: table-cell;
 }
 
-.Home-entry:link, .Home-entry:visited {
-  background-color: #246;
+.Home-entry:hover {
+  background-color: #fdd;
 }
 
-.Home-entry:hover {
-  background-color: #468;
+
+.Home-entry.l2 {
+  background-color: #bbc;
 }
+
+.Home-entry.l3 {
+  background-color: #99b;
+}
+
+.Home-entry.l4 {
+  background-color: #77a;
+}
+
 
 .Home-entry-main {
+  color: #222;
   font-size: x-large;
   text-align: left;
+  background-image: url('./img/whiteGridPattern.png');
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 10px;
@@ -39,7 +51,6 @@
 }
 
 .Home-entry-main-link a, .Home-entry-main-link:link {
-  color: #222;
   text-decoration: none;
 }
 
