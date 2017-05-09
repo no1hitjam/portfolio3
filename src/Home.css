@@ -39,7 +39,6 @@
 }
 
 .Home-entry-main-link a, .Home-entry-main-link:link {
-  color: #222;
   text-decoration: none;
 }
 
@@ -68,11 +67,6 @@
   -webkit-filter: brightness(120%);
   filter: brightness(120%);
 }
-
-.Home-game-item-link:link {
-  
-}
-
 
 
 /* grams */
