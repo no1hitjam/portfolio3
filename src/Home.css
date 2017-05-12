@@ -21,7 +21,7 @@
 }
 
 .Home-entry:hover {
-  background-color: #fdd;
+  background-color: #fde;
 }
 
 
@@ -42,12 +42,24 @@
   color: #222;
   font-size: x-large;
   text-align: left;
-  background-image: url('./img/whiteGridPattern.png');
+  background-image: url('./img/home-divider.png');
+  background-repeat: repeat-x;
+  background-position: bottom; 
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 10px;
   margin-top: 0px;
   width: 264px;
+}
+
+@-webkit-keyframes backgroundScroll {
+  from {background-position: 0 0;}  
+  to {background-position: -40px -20px;}  
+}
+
+@keyframes backgroundScroll {
+  from {background-position: 0 0;}  
+  to {background-position: -40px -20px;}  
 }
 
 .Home-entry-main-link a, .Home-entry-main-link:link {
