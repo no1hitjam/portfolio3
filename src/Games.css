@@ -30,7 +30,6 @@
   margin-bottom: 0px;
   padding: 10px 15px;
   display: inline-block;
-  min-width: 400px;
 }
 
 .Game-header h4 {
@@ -86,11 +85,11 @@
   padding-bottom: 1em;
 }
 
-.l2 {
+.Game-link.l2 {
   background-color: #4f85a6;
 }
 
-.l3 {
+.Game-link.l3 {
   background-color: #406c86;
 }
 

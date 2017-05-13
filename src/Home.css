@@ -1,7 +1,6 @@
 
 .Home-row {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 3em;
   margin-left: 7px;
   margin-right: 7px;
   vertical-align: middle;
@@ -11,7 +10,8 @@
   
   font-weight: bold;
 
-  background-color: #246;
+  background-repeat: repeat-x;
+  background-position: bottom; 
   height: 75px;
   padding: 12px;
   
@@ -20,22 +20,38 @@
   display: table-cell;
 }
 
-.Home-entry:link, .Home-entry:visited {
-  background-color: #246;
+.Home-entry.l2:hover {
+  background-color: #ec3;
 }
 
-.Home-entry:hover {
-  background-color: #468;
+.Home-entry.l3:hover {
+  background-color: #e90;
 }
+
+.Home-entry.l4:hover {
+  background-color: #e60;
+}
+
 
 .Home-entry-main {
+  color: #222;
+  background-color: #ddd;
   font-size: x-large;
   text-align: left;
+  
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 10px;
-  margin-top: 0px;
   width: 264px;
+}
+
+@-webkit-keyframes backgroundScroll {
+  from {background-position: 0 0;}  
+  to {background-position: -40px -20px;}  
+}
+
+@keyframes backgroundScroll {
+  from {background-position: 0 0;}  
+  to {background-position: -40px -20px;}  
 }
 
 .Home-entry-main-link a, .Home-entry-main-link:link {
@@ -51,6 +67,15 @@
 
 .Home-game {
   height: 120px;
+}
+
+.Home-game.Home-entry-main {
+  background-image: url('./img/home-games-border.png');
+}
+
+.Home-game.Home-entry-main:hover {
+  background-color: #379f7a;
+  color: #eee;
 }
 
 .Home-game.Home-entry-item {
@@ -75,11 +100,19 @@
   height: 90px;
 }
 
+.Home-gram.Home-entry-main {
+  background-image: url('./img/home-art-border.png');
+}
+
+.Home-gram.Home-entry-main:hover {
+  background-color: #61c532;
+  color: #eee;
+}
+
 .Home-gram.Home-entry-item {
   width: 96px;
   padding-left: 4px;
   padding-right: 4px;
-  background-size: 150px; 
   background-position: center;
   -webkit-filter: brightness(100%);
   filter: brightness(100%);
@@ -95,10 +128,19 @@
 
 .Home-program {
   height: 60px;
+  
 }
 
-.Home-program.Home-entry-item {
-  width: 96px;
-  padding-left: 4px;
-  padding-right: 4px;
+.Home-program.Home-entry-main {
+  background-image: url('./img/home-programming-border.png');
+  border-bottom: 2em solid #fff;
+}
+
+.Home-program.Home-entry-main:hover {
+  background-color: #f5f32a;
+  
+}
+
+.Home-program.Home-entry-item.about-me {
+  width: 204px;
 }

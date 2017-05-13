@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import './Games.css';
 import canvasserImg from './img/game-canvasser.jpg';
+import actionNewsImg from './img/game-actionnews.jpg';
+import monsterBudsImg from './img/game-monsterbuds.jpg';
 
 class Game extends Component {
   render() {
@@ -73,7 +75,7 @@ export class Games extends Component {
         <h3>Games</h3>
         <Game
           name="OK K.O.! Dynamite's Action News" 
-          img={canvasserImg}
+          img={actionNewsImg}
           date={2017}
           tags={['Unity3D', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
           links={['Android Download', 'iOS Download', 'Amazon Download']}
@@ -107,7 +109,7 @@ export class Games extends Component {
 
         <Game
           name="Monster Buds"
-          img={canvasserImg}
+          img={monsterBudsImg}
           date={2016}
           tags={['Unity3D', 'C#', 'Web', 'Open-ended', 'Life-Sim', 'Crafting']}
           links={['Download from Itch.io']}

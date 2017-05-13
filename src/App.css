@@ -11,34 +11,62 @@ a {
 
 h3 {
   font-size: 1.7em;
-  color: #f45;
+  color: #379F7A;
   margin-top: .3em;
   margin-bottom: 1.5em;
 }
 
-.App-header {
-  background-color: #f45;
-  height: 6em;
+#App-header-container {
+  background-color: #ddd;
+}
+
+#App-header {
+  background-color: #379F7A;
+  line-height: 2.5em;
   padding: .5em;
-  margin: .5em;
-  margin-bottom: .5em;
+  margin: .7em;
+  margin-top: 0;
+  margin-bottom: 0em;
   color: white;
 }
 
-.App-header img {
+#App-header img {
   width: 20px;
 }
 
-.App-header-simple {
-  height: 70px;
-}
-
-.App-header a {
+#App-header a {
+  font-size: .9em;
   color: #fff;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.App-header h2 {
+
+
+#header-home {
+  text-decoration: none;
+}
+
+#header-home span {
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 2.6em;
+  border-bottom: 2px solid #fff;
+}
+
+#App-header h2 {
   margin: 0;
+}
+
+.about-me {
+  color: #eee;
+  background-color: #3355aa;
+  font-size: .8em;
+}
+
+.jackson {
+  background-image: url('./img/jackson.jpg');
+  padding: 12px;
+  background-size: 84px;
+  width: 60px;
 }
