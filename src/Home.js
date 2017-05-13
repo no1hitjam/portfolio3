@@ -12,8 +12,6 @@ import gramImg3 from './img/gram-garden.jpg';
 import canvasserImg from './img/home-canvasser.jpg';
 import actionNewsImg from './img/home-actionnews.jpg';
 
-import homeDivider from './img/home-divider.png';
-
 export class Home extends Component {
   render() {
     return (
