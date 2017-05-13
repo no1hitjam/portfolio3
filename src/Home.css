@@ -21,7 +21,7 @@
 }
 
 .Home-entry:hover {
-  background-color: #fde;
+  background-color: #efe;
 }
 
 
@@ -125,6 +125,10 @@
 
 .Home-program {
   height: 60px;
+}
+
+.Home-program.Home-entry-main {
+  background-image: url('./img/home-programming-border.png');
 }
 
 .Home-program.Home-entry-item {
