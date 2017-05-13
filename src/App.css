@@ -16,29 +16,31 @@ h3 {
   margin-bottom: 1.5em;
 }
 
-.App-header {
+#App-header-container {
+  background-color: #ddd;
+  
+}
+
+#App-header {
   background-color: #379F7A;
   height: 6em;
   padding: .5em;
-  margin: .5em;
-  margin-bottom: .5em;
+  margin: .7em;
+  margin-top: 0;
+  margin-bottom: 0em;
   color: white;
 }
 
-.App-header img {
+#App-header img {
   width: 20px;
 }
 
-.App-header-simple {
-  height: 70px;
-}
-
-.App-header a {
+#App-header a {
   color: #fff;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.App-header h2 {
+#App-header h2 {
   margin: 0;
 }
