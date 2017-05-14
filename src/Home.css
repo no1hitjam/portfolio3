@@ -35,7 +35,7 @@
 
 .Home-entry-main {
   color: #222;
-  background-color: #ddd;
+  background-color: #e9e9e9;
   font-size: x-large;
   text-align: left;
   
@@ -70,12 +70,12 @@
 }
 
 .Home-game.Home-entry-main {
-  background-image: url('./img/home-games-border.png');
+  background-image: url('./img/home-games.png');
 }
 
 .Home-game.Home-entry-main:hover {
-  background-color: #379f7a;
-  color: #eee;
+  background-color: #117ba2;
+  color: #fff;
 }
 
 .Home-game.Home-entry-item {
