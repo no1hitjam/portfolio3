@@ -6,8 +6,12 @@ import './Programming.css';
 class Project extends Component {
   render() {
     const tags = this.props.tags.map((val, idx) => {
+      let color = '#bbb';
+      if (this.props.tagStates[val]) {
+        color = '#fff';
+      }
       return (
-        <a href="#"><span className="Project-tag">{val}</span></a>
+        <button style={{backgroundColor: {color}}} onClick={() => this.props.onTagClick(val)}>{val}</button>
       )
     });
 
@@ -37,6 +41,25 @@ class Project extends Component {
 }
 
 export class Programming extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      tags: {}
+    };
+
+    this.onTagClick = this.onTagClick.bind(this);
+  }
+
+  onTagClick(val) {
+    const tags = this.state.tags;
+    if (tags[val]) {
+      tags[val] = !tags[val];
+    } else {
+      tags[val] = true;
+    }
+    this.setState({tags: tags});
+  }
+
   render() {
     return (
       <div className="Programming">
@@ -47,6 +70,8 @@ export class Programming extends Component {
           company="Wake Robin Games"
           date="June 2016 - May 2017"
           tags={['Game', 'C#', 'Unity3d', 'Mobile']}
+          onTagClick = {this.onTagClick}
+          tagStates = {this.state.tags}
           links={[]}
           desc={["I led our team of three (musician, artist, programmer) in making this mobile game with our publisher, Cartoon Network. I programmed it in C# with the Unity3D engine. Many of the design and programming challenges came from our desire to have an exciting narrative action in the style of a real cartoon."]}
         />
@@ -57,6 +82,8 @@ export class Programming extends Component {
           company="Wake Robin Games"
           date="March - May 2017"
           tags={['Game', 'JavaScript', 'HTML5', 'Web', 'Mobile']}
+          onTagClick = {this.onTagClick}
+          tagStates = {this.state.tags}
           links={[]}
           desc="I worked on a series of JavaScript web games using the HTML5 canvas that are currently pending release. They were optimized to run smoothly on mobile devices and across browsers."
         />
@@ -67,6 +94,8 @@ export class Programming extends Component {
           company="CASS"
           date="April 2015 - June 2016"
           tags={['SQL Server', 'SSIS', 'Python', 'SSMS']}
+          onTagClick = {this.onTagClick}
+          tagStates = {this.state.tags}
           links={[]}
           desc="I led our team of student developers in creating an archive process for four 1,000,000+ row tables in a MSSQL Server database using SQL and SSIS that is currently in production at ODOT. Lead a team of four with mentorship responsibilities through the next phase in a scrum-like environment to extend the process to more than 200 tables. Drafted requirements with clients and helped draft budget."
         />
@@ -77,8 +106,10 @@ export class Programming extends Component {
           company=""
           date="Continuous"
           tags={['HTML', 'CSS', 'JavaScript', 'ReactJS']}
+          onTagClick = {this.onTagClick}
+          tagStates = {this.state.tags}
           links={[]}
-          desc={["I've rebuilt this site many times over the years as a way to apply the lessons I've learned with UX, design, and web technologies. This latest incarnation was created with ReactJS. (TODO: Why ReactJS) This 'Programming Resume' page is the most fun one since it includes the smart tagging feature.", <br />,"The hard part of this website is that is has to fit two different audiences: Those who might want to hire me as a professional programmer, and those who want to play my games. To satisfy each audience, I've tried my best to find a balance between fun and professional. Among other design decisions, you'll notice less exclamation marks on this page than on the games page!", <span style={{color: '#777', fontSize: '.7em', fontStyle: 'italic'}}> &nbsp; ← &nbsp;That one slipped in</span>]}
+          desc={["I've rebuilt this site many times over the years as a way to apply the lessons I've learned with UX, design, and web technologies. This latest incarnation was created with ReactJS. (TODO: Why ReactJS) This 'Programming Resume' page is the most fun one since it includes the smart tagging feature.", <br />,"(TODO: Shorter) This website is a fun challenge The hard part of this website is that is has to fit two different audiences: Those who might want to hire me as a professional programmer, and those who want to play my games. To satisfy each audience, I've tried my best to find a balance between fun and professional. Among other design decisions, you'll notice less exclamation marks on this page than on the games page!", <span style={{color: '#777', fontSize: '.7em', fontStyle: 'italic'}}> &nbsp; ← &nbsp;That one slipped in</span>]}
         />
 
         <Project
@@ -87,6 +118,8 @@ export class Programming extends Component {
           company=""
           date="2006 - Present"
           tags={['Game', 'C#', 'Unity3d', 'JavaScript', 'Web']}
+          onTagClick = {this.onTagClick}
+          tagStates = {this.state.tags}
           links={[]}
           desc="Developing games has been a hobby of mine since I started high school, although I may not have told many people about it back then. But I look back on it proudly now because the work I did really helped me understand full project life-cycles, customer feedback, and user experiences. The web games I published taught me how to make user interfaces clear and juicy, how to use user metrics to evaluate success, and how to grow as a designer."
         />

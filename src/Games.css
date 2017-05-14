@@ -50,7 +50,6 @@
   display: inline-block;
 }
 
-
 .Game-entry {
   font-size: .9em;
   text-align: left;
@@ -78,12 +77,21 @@
 .Game-link {
   background-color: #699ab8;
   font-weight: bold;
-  
-
+  padding: 1em;
   display: block;
-  padding-top: 1em;
-  padding-bottom: 1em;
 }
+
+.Game-picture-link {
+  background-color: #ddd;
+  padding: .5em;
+  display: block;
+}
+
+.Game-link img {
+  max-height: 35px;
+}
+
+
 
 .Game-link.l2 {
   background-color: #4f85a6;

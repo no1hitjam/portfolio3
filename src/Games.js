@@ -4,6 +4,9 @@ import './Games.css';
 import canvasserImg from './img/game-canvasser.jpg';
 import actionNewsImg from './img/game-actionnews.jpg';
 import monsterBudsImg from './img/game-monsterbuds.jpg';
+import appStoreImg from './img/appstore.svg';
+import googlePlayImg from './img/google-play-badge.png';
+import amazonImg from './img/amazon-badge.png';
 
 class Game extends Component {
   render() {
@@ -16,9 +19,7 @@ class Game extends Component {
     const links = this.props.links.map((val, idx) => {
       const ltext = idx > 0 ? ' l' + (idx + 1) : '';
       return (
-        <td><a href="#">
-          <span className={"Game-link" + ltext}>{val}</span>
-        </a></td>
+        <td>{val}</td>
       )
     });
 
@@ -78,7 +79,11 @@ export class Games extends Component {
           img={actionNewsImg}
           date={2017}
           tags={['Unity3D', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
-          links={['Android Download', 'iOS Download', 'Amazon Download']}
+          links={[
+            <a className="Game-picture-link"><img src={googlePlayImg} /></a>, 
+            <a className="Game-picture-link"><img src={appStoreImg} /></a>, 
+            <a className="Game-picture-link"><img src={amazonImg} /></a>
+          ]}
           desc={["This is a fast-paced casual game where you play as star reporter Dynamite Watkins in the universe of Cartoon Network's ", <a href='#'>OK K.O.! Let's Be Heroes</a>, "! Uncover the secrets of the evil fog by getting big question combos and don't let the bad guys get away with it!"]}
           roles={['Programmer', 'Writer', 'Game Design', 'UI Design']}
           personal={["I made this with ",  <a href="#">Conley Smith</a>, " and ", <a href="#">Nathan Franks</a>, 
@@ -93,7 +98,7 @@ export class Games extends Component {
           img={canvasserImg}
           date={2014}
           tags={['ActionScript\u00a03.0', 'Flash', 'Web', 'Strategy', 'Persuasion']} 
-          links={['Play Online!']}
+          links={[<a><span className={"Game-link"}>Play Online!</span></a>]}
           desc="Grab your clipboard and brush up on your social skills: It’s time to raise money on the streets for charity! Canvasser is a persuasion game, and it’s all about getting the most donations possible before the day ends. Can you sustain interest, trust, and get your town to care about Evergreen Forest before it’s too late?"
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
           personal="I built this game after the unforgettable experiences I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
@@ -112,7 +117,7 @@ export class Games extends Component {
           img={monsterBudsImg}
           date={2016}
           tags={['Unity3D', 'C#', 'Web', 'Open-ended', 'Life-Sim', 'Crafting']}
-          links={['Download from Itch.io']}
+          links={[<a><span className={"Game-link"}>Download from Itch.io</span></a>]}
           desc="You've moved into a new neighborhood, and the bad news is that all your neighbors are monsters! The good news is that they're pretty chill. Collect things, build paths, fences, and live your life the monster way!"
           roles={['Programmer, Game Design, Environmental Artist']}
           personal="This was made for the 2016 Game Boy Jam with Conley Smith and Nathan Franks. You might think of it as an Animal Crossing de-make. We wanted to see what the simplest form of that genre would look like."

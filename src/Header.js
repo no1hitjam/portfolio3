@@ -29,6 +29,7 @@ export function Header(props) {
             <a href="https://github.com/no1hitjam"><img src={githubImg} /></a>
           </span>
         </span>
+        <span style={{display: 'inline-block', fontSize: 'x-small'}}>This site is under development</span>
       </div>
     </div>
   )
