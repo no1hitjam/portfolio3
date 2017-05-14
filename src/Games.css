@@ -75,10 +75,11 @@
 }
 
 .Game-link {
-  background-color: #699ab8;
-  font-weight: bold;
+  background-color: #117ba2;
   padding: 1em;
   display: block;
+  border: 4px double #eee;
+  border-top: none;
 }
 
 .Game-picture-link {
@@ -87,22 +88,26 @@
   display: block;
 }
 
-.Game-link img {
-  max-height: 35px;
+.Game-picture-link img {
+  max-width: 150px;
 }
 
 
 
 .Game-link.l2 {
-  background-color: #4f85a6;
+  background-color: #0D6382;
 }
 
 .Game-link.l3 {
-  background-color: #406c86;
+  background-color: #094B62;
+}
+
+.Game-link.l4 {
+  background-color: #053342;
 }
 
 .Game-link:hover {
- background-color: #88c1e4;
+ background-color: 		#4195B4;
 }
 
 .Game-info {

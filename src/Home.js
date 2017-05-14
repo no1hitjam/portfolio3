@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 import './Home.css';
 
@@ -25,20 +26,20 @@ export class Home extends Component {
               </span>
             </Link>
             <span style={{display: 'inline-block'}}>
-              <Link to="/games">
+              <HashLink to="/games#action-news">
                 <span
                 className="Home-entry Home-game Home-entry-item l2"
                 style={{backgroundImage: 'url(' + actionNewsImg + ')'}}>
                   OK K.O.! Dynamite's<br /> Action News
                 </span>
-              </Link>
-              <Link to="/games">
+              </HashLink>
+              <HashLink to="/games#canvasser">
                 <span 
                 className="Home-entry Home-game Home-entry-item l3"
                 style={{backgroundImage: 'url(' + canvasserImg + ')'}}>
                   Canvasser
                 </span>
-              </Link>
+              </HashLink>
             </span>
           </div>
           <div>

@@ -31,7 +31,7 @@ class Game extends Component {
     });
 
     const quotes = this.props.quotes.map((val, idx) => {
-      const ltext = idx > 0 ? ' l' + (idx + 1) : '';
+      const ltext = ' l' + (idx + 2);
       return (
         <a className="quoteLink" href={val.link}>
           <div className={"Game-link quote" + ltext}>
@@ -42,7 +42,7 @@ class Game extends Component {
     });
 
     return (
-      <div className="Game">
+      <div className="Game" id={this.props.id}>
         <div
           className="Game-img-container"
           style={{backgroundImage: 'url(' + this.props.img + ')'}}>
@@ -75,15 +75,17 @@ export class Games extends Component {
       <div className="Games">
         <h3>Games</h3>
         <Game
+          id="action-news"
           name="OK K.O.! Dynamite's Action News" 
           img={actionNewsImg}
           date={2017}
           tags={['Unity3D', 'C#', 'Mobile', 'Casual', 'Kids', 'Story']} 
-          links={[
+          links={[<span style={{padding: '.3em', display:'block', fontStyle: 'italic'}}>Coming soon!</span>]}
+          /*links={[
             <a className="Game-picture-link"><img src={googlePlayImg} /></a>, 
             <a className="Game-picture-link"><img src={appStoreImg} /></a>, 
             <a className="Game-picture-link"><img src={amazonImg} /></a>
-          ]}
+          ]}*/
           desc={["This is a fast-paced casual game where you play as star reporter Dynamite Watkins in the universe of Cartoon Network's ", <a href='#'>OK K.O.! Let's Be Heroes</a>, "! Uncover the secrets of the evil fog by getting big question combos and don't let the bad guys get away with it!"]}
           roles={['Programmer', 'Writer', 'Game Design', 'UI Design']}
           personal={["I made this with ",  <a href="#">Conley Smith</a>, " and ", <a href="#">Nathan Franks</a>, 
@@ -94,6 +96,7 @@ export class Games extends Component {
         />
 
         <Game
+          id="canvasser"
           name="Canvasser" 
           img={canvasserImg}
           date={2014}
@@ -113,11 +116,12 @@ export class Games extends Component {
         />  
 
         <Game
+          id="monster-buds"
           name="Monster Buds"
           img={monsterBudsImg}
           date={2016}
           tags={['Unity3D', 'C#', 'Web', 'Open-ended', 'Life-Sim', 'Crafting']}
-          links={[<a><span className={"Game-link"}>Download from Itch.io</span></a>]}
+          links={[<a href="https://wakerobingames.itch.io/monsterbuds"><span className={"Game-link"}>Download from Itch.io</span></a>]}
           desc="You've moved into a new neighborhood, and the bad news is that all your neighbors are monsters! The good news is that they're pretty chill. Collect things, build paths, fences, and live your life the monster way!"
           roles={['Programmer, Game Design, Environmental Artist']}
           personal="This was made for the 2016 Game Boy Jam with Conley Smith and Nathan Franks. You might think of it as an Animal Crossing de-make. We wanted to see what the simplest form of that genre would look like."
