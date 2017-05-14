@@ -43,32 +43,32 @@ export class Programming extends Component {
         <h3>Programming Resume</h3>
         <Project
           name="OK K.O.! Dynamite's Action News"
-          role="Lead Programmer"
+          role="Project Lead, Lead Programmer"
           company="Wake Robin Games"
           date="June 2016 - May 2017"
           tags={['Game', 'C#', 'Unity3d', 'Mobile']}
           links={[]}
-          desc="Long description of this project"
+          desc={["I led our team of three (musician, artist, programmer) in making this mobile game with our publisher, Cartoon Network. I programmed it in C# with the Unity3D engine. Many of the design and programming challenges came from our desire to have an exciting narrative action in the style of a real cartoon."]}
         />
 
         <Project
-          name="Secret Web Game Project"
+          name="Web Games"
           role="Lead Programmer"
           company="Wake Robin Games"
           date="March - May 2017"
           tags={['Game', 'JavaScript', 'HTML5', 'Web', 'Mobile']}
           links={[]}
-          desc="Long description of this project"
+          desc="I worked on a series of JavaScript web games using the HTML5 canvas that are currently pending release. They were optimized to run smoothly on mobile devices and across browsers."
         />
 
         <Project
           name="TOCS Archive"
-          role="Developer"
+          role="Project Lead, Developer"
           company="CASS"
           date="April 2015 - June 2016"
           tags={['SQL Server', 'SSIS', 'Python', 'SSMS']}
           links={[]}
-          desc="Created an archive process for four 1,000,000+ row tables in a MSSQL Server database using SQL and SSIS that is currently in production at ODOT. Lead a team of four with mentorship responsibilities through the next phase in a scrum-like environment to extend the process to more than 200 tables. Drafted requirements with clients and helped draft budget."
+          desc="I led our team of student developers in creating an archive process for four 1,000,000+ row tables in a MSSQL Server database using SQL and SSIS that is currently in production at ODOT. Lead a team of four with mentorship responsibilities through the next phase in a scrum-like environment to extend the process to more than 200 tables. Drafted requirements with clients and helped draft budget."
         />
 
         <Project
