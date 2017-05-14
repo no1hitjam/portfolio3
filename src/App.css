@@ -18,15 +18,18 @@ h3 {
 
 #App-header-container {
   background-color: #ddd;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 #App-header {
   background-color: #379F7A;
-  line-height: 2.5em;
+  line-height: 2.3em;
   padding: .5em;
   margin: .7em;
   margin-top: 0;
-  margin-bottom: 0em;
+  margin-bottom: 0;
   color: white;
 }
 
@@ -41,16 +44,13 @@ h3 {
   margin-right: 10px;
 }
 
-
-
 #header-home {
   text-decoration: none;
 }
 
-#header-home span {
+#header-home-inner {
   font-size: 1.5em;
   font-weight: bold;
-  line-height: 2.6em;
   border-bottom: 2px solid #fff;
 }
 

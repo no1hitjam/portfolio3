@@ -1,8 +1,6 @@
 
 .Home-row {
-  margin-top: 3em;
-  margin-left: 7px;
-  margin-right: 7px;
+  margin-top: 1.3em;
   vertical-align: middle;
 }
 
@@ -31,7 +29,6 @@
 .Home-entry.l4:hover {
   background-color: #e60;
 }
-
 
 .Home-entry-main {
   color: #222;
@@ -70,6 +67,7 @@
 }
 
 .Home-game.Home-entry-main {
+  color: #005371;
   background-image: url('./img/home-games.png');
 }
 
@@ -133,7 +131,7 @@
 
 .Home-program.Home-entry-main {
   background-image: url('./img/home-programming-border.png');
-  border-bottom: 2em solid #fff;
+  border-bottom: 1em solid #fff;
 }
 
 .Home-program.Home-entry-main:hover {
