@@ -30,7 +30,7 @@ export class Home extends Component {
                 <span
                 className="Home-entry Home-game Home-entry-item l2"
                 style={{backgroundImage: 'url(' + actionNewsImg + ')'}}>
-                  OK K.O.! Dynamite's<br /> Action News
+                  OK K.O.! Dynamite's<r /> Action News
                 </span>
               </HashLink>
               <HashLink to="/games#canvasser">
