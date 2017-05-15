@@ -18,18 +18,6 @@
   display: table-cell;
 }
 
-.Home-entry.l2:hover {
-  background-color: #ec3;
-}
-
-.Home-entry.l3:hover {
-  background-color: #e90;
-}
-
-.Home-entry.l4:hover {
-  background-color: #e60;
-}
-
 .Home-entry-main {
   color: #222;
   background-color: #e9e9e9;
@@ -99,7 +87,7 @@
 }
 
 .Home-gram.Home-entry-main {
-  background-image: url('./img/home-art-border.png');
+  background-image: url('./img/home-art.png');
 }
 
 .Home-gram.Home-entry-main:hover {
@@ -130,12 +118,13 @@
 }
 
 .Home-program.Home-entry-main {
-  background-image: url('./img/home-programming-border.png');
+  background-image: url('./img/home-programming.png');
   border-bottom: 1em solid #fff;
 }
 
 .Home-program.Home-entry-main:hover {
-  background-color: #f5f32a;
+  background-color: #9aab00;
+  color: #eee;
   
 }
 
