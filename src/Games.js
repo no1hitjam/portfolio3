@@ -101,7 +101,7 @@ export class Games extends Component {
           img={canvasserImg}
           date={2014}
           tags={['ActionScript\u00a03.0', 'Flash', 'Web', 'Strategy', 'Persuasion']} 
-          links={[<a><span className={"Game-link"}>Play Online!</span></a>]}
+          links={[<a><span className={"Game-link"}>Play Online on GameJolt</span></a>]}
           desc="Grab your clipboard and brush up on your social skills: It’s time to raise money on the streets for charity! Canvasser is a persuasion game, and it’s all about getting the most donations possible before the day ends. Can you sustain interest, trust, and get your town to care about Evergreen Forest before it’s too late?"
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
           personal="I built this game after the unforgettable experiences I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
@@ -127,6 +127,14 @@ export class Games extends Component {
           personal="This was made for the 2016 Game Boy Jam with Conley Smith and Nathan Franks. You might think of it as an Animal Crossing de-make. We wanted to see what the simplest form of that genre would look like."
           quotes={[]}
         />
+        
+        {/* , <br />,
+          "Here are some links to the old games I made. All require flash player.",
+          <ul>
+            <li><a href="http://www.newgrounds.com/portal/view/389286">Play <b>Bombcatcher 2</b> (2007) online on Newgrounds</a></li>
+            <li><a href="http://www.newgrounds.com/portal/view/444108">Play <b>Super Strawberry Clock</b> (2008) online on Newgrounds</a></li>
+            <li><a href="http://www.kongregate.com/games/number1hitjam/its-a-monster">Play <b>It's a Monster</b> (2010) online on Kongregate</a></li>
+          </ul> */}
       </div>
     )
   }

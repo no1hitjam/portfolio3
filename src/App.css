@@ -16,6 +16,10 @@ h3 {
   margin-bottom: 1.5em;
 }
 
+button:focus{
+    outline: none;   
+}
+
 #App-header-container {
   background-color: #ddd;
   top: 0;

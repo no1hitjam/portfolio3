@@ -29,14 +29,24 @@
 }
 
 .Project-tags {
-  background-color: #ccc;
+  background-color: #ddd;
 }
 
 .Project-tags button {
   padding: .5em 1.3em;
-  background-color: #ccc;
+  background-color: #fff;
   display: inline-block;
   border: 0;
+  cursor: pointer;
+  border-right: 1px solid #ddd;
+}
+
+.Project-desc-tag-active {
+  background-color: #fff;
+}
+
+.Project-tags button:hover {
+  background-color: #eee;
 }
 
 .Project-tags button:hover {
