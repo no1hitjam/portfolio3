@@ -125,9 +125,9 @@
 .Home-program.Home-entry-main:hover {
   background-color: #9aab00;
   color: #eee;
-  
 }
 
 .Home-program.Home-entry-item.about-me {
+  background-image: url('./img/home-about.png');
   width: 204px;
 }
