@@ -101,7 +101,7 @@ export class Games extends Component {
           img={canvasserImg}
           date={2014}
           tags={['ActionScript\u00a03.0', 'Flash', 'Web', 'Strategy', 'Persuasion']} 
-          links={[<a><span className={"Game-link"}>Play Online on GameJolt</span></a>]}
+          links={[<a href="https://gamejolt.com/games/canvasser/15142"><span className={"Game-link"}>Play Online on GameJolt</span></a>]}
           desc="Grab your clipboard and brush up on your social skills: It’s time to raise money on the streets for charity! Canvasser is a persuasion game, and it’s all about getting the most donations possible before the day ends. Can you sustain interest, trust, and get your town to care about Evergreen Forest before it’s too late?"
           roles={['Programmer', 'Writer', 'Artist', 'Game Design', 'Music', 'Sound']}
           personal="I built this game after the unforgettable experiences I had as a Canvasser. I wanted to take the lessons I learned and the paradoxes I faced in the short time I spent fundraising and teach them through this game."
@@ -128,6 +128,17 @@ export class Games extends Component {
           quotes={[]}
         />
         
+        <div className="Game-entry">
+          <div className="Game-info">
+            Here are some links to older games I made! All require flash player to play.
+            <ul>
+              <li><a href="http://www.kongregate.com/games/number1hitjam/its-a-monster">It's a Monster! (2010) [Kongregate]</a></li>
+              <li><a href="http://www.newgrounds.com/portal/view/444108">Super Strawberry Clock (2008) [Newgrounds]</a></li>
+              <li><a href="http://www.newgrounds.com/portal/view/389286">Bombcatcher 2 (2007) [Newgrounds]</a></li>
+            </ul>
+          </div>
+        </div>
+
         {/* , <br />,
           "Here are some links to the old games I made. All require flash player.",
           <ul>

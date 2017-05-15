@@ -118,7 +118,10 @@
 
 .Game-info a {
   color: #222;
-  border-bottom: 2px solid #fff;
+}
+
+.Game-info li {
+  line-height: 2em;
 }
 
 .roles {
