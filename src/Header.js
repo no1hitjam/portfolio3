@@ -7,6 +7,7 @@ import homeSrc from './img/home1.png';
 import instagramImg from './img/instagram.png';
 import twitterImg from './img/twitter.png';
 import githubImg from './img/github.png';
+import linkedInImg from './img/linkedIn.png';
 
 export class Header extends Component {
   homeImg = <HomeImg src={homeSrc}/>
@@ -47,6 +48,7 @@ export class Header extends Component {
               <a href="https://www.instagram.com/moon_dude/"><img alt="Instagram logo" src={instagramImg} /></a>
               <a href="https://twitter.com/no1hitjam"><img alt="Twitter logo" src={twitterImg} /></a>
               <a href="https://github.com/no1hitjam"><img alt="Github logo" src={githubImg} /></a>
+              <a href="https://www.linkedin.com/in/jackson-lango-3a610952/"><img alt="LinkedIn logo" src={linkedInImg} /></a>
             </span>
           </span>
           <span style={{display: 'inline-block', fontSize: 'x-small'}}>This site is under development</span>

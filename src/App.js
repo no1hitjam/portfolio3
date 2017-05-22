@@ -11,7 +11,6 @@ import { Games } from './Games.js';
 import { Programming } from './Programming.js';
 
 
-
 class App extends Component {
   render() {
     return (

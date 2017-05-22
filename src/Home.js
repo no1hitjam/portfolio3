@@ -66,7 +66,7 @@ export class Home extends Component {
           </Link>
           <span>
             <span className="Home-entry Home-program Home-entry-item about-me">
-              "Hello, this is my porfolio site, <a>contact me here</a> if you have any questions!" 
+              "Hello! This is my portfolio site, <a>contact me here</a> if you have any questions!"
             </span>
             <span className="Home-entry Home-program Home-entry-item jackson"></span>
           </span>

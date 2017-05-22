@@ -38,7 +38,7 @@ button:focus{
 }
 
 #App-header img {
-  width: 20px;
+
 }
 
 #App-header a {
@@ -65,6 +65,7 @@ button:focus{
 .about-me {
   color: #eee;
   font-size: .8em;
+  text-align: right;
 }
 
 .jackson {
