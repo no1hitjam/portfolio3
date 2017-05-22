@@ -1,5 +1,5 @@
 {
-  "name": "portfolio3",
+  "name": "no1hitjam.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,5 +20,5 @@
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
   },
-  "homepage": "https://no1hitjam.github.io/portfolio3"
+  "homepage": "https://no1hitjam.github.io"
 }
