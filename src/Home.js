@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import Mailto from 'react-mailto';
 
 import './Home.css';
 
@@ -66,7 +67,7 @@ export class Home extends Component {
           </Link>
           <span>
             <span className="Home-entry Home-program Home-entry-item about-me">
-              "Hello! This is my portfolio site, <a>contact me here</a> if you have any questions!"
+              "Hello! This is my portfolio site, <Mailto email="jacksonlango@gmail.com" obfuscate={true} headers={{subject: "Hi from jacksonlango.com!"}}>contact me here</Mailto> if you have any questions!"
             </span>
             <span className="Home-entry Home-program Home-entry-item jackson"></span>
           </span>
