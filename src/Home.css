@@ -55,12 +55,11 @@
 }
 
 .Home-game.Home-entry-main {
-  color: #005371;
   background-image: url('./img/home-games.png');
 }
 
 .Home-game.Home-entry-main:hover {
-  background-color: #117ba2;
+  background-color: #00996c;
   color: #fff;
 }
 
@@ -92,7 +91,7 @@
 
 .Home-gram.Home-entry-main:hover {
   background-color: #61c532;
-  color: #eee;
+  color: #fff;
 }
 
 .Home-gram.Home-entry-item {
@@ -123,8 +122,8 @@
 }
 
 .Home-program.Home-entry-main:hover {
-  background-color: #9aab00;
-  color: #eee;
+  background-color: #f5a102;
+  color: #fff;
 }
 
 .Home-program.Home-entry-item.about-me {

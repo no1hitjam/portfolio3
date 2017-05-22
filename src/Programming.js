@@ -15,8 +15,8 @@ class Project extends Component {
     CSS: '#ccfab8',
     Web: '#6edae5',
     SQL: '#c39a93',
-    SSIS: '#fef5d1s',
-    Python: '#feb3be',
+    SSIS: '#fee5b1',
+    Python: '#fea3ae',
     SSMS: '#6d85ff',
     ReactJS: '#ffa772',
     ActionScript: '#d672ff'
@@ -29,20 +29,10 @@ class Project extends Component {
         color = this.tagColors[val];
       }
       return (
-        <button style={{backgroundColor: color, borderBottom: "2px solid " + this.tagColors[val]}} onClick={() => this.props.onTagClick(val)}>{val}</button>
+        <button key={val} style={{backgroundColor: color, borderBottom: "2px solid " + this.tagColors[val]}} onClick={() => this.props.onTagClick(val)}>{val}</button>
       )
     });
 
-    const links = this.props.links.map((val, idx) => {
-      const ltext = idx > 0 ? ' l' + (idx + 1) : '';
-      return (
-        <td><a href="#">
-          <span className={"Game-link" + ltext}>{val}</span>
-        </a></td>
-      )
-    });
-
-    const desc = [];
     for (const descIdx in this.props.desc) {
       const descItem = this.props.desc[descIdx];
       if (descItem.props) {
@@ -63,7 +53,7 @@ class Project extends Component {
       <div className="Project">
         <h4>{this.props.name}</h4>
         <table><tbody><tr>
-          <td className="Project-item">{this.props.role}</td>
+          <td className="Project-item">{this.props.roles}</td>
           <td className="Project-item">{this.props.company}</td>
           <td className="Project-item Project-date">{"(" + this.props.date + ")"}</td>
         </tr></tbody></table>
@@ -106,13 +96,12 @@ export class Programming extends Component {
         <h3>Programming Resume</h3>
         <Project
           name="OK K.O.! Dynamite's Action News"
-          role="Project Lead, Lead Programmer, Designer"
+          roles="Project Lead, Lead Programmer, Designer"
           company={<a target="_blank" href="http://wakerobingames.com/">Wake Robin Games</a>}
           date="June 2016 - May 2017"
           tags={['C#', 'Unity3d', 'Mobile', 'Game']}
-          onTagClick = {this.onTagClick}
-          tagStates = {this.state.tags}
-          links={[]}
+          onTagClick={this.onTagClick}
+          tagStates={this.state.tags}
           desc={["I led our team of three (musician, artist, programmer) in making this ", <span className="Project-desc-tag">mobile</span>, " ",
           <span className="Project-desc-tag">game</span>, " with Cartoon Network. I programmed it in ", 
           <span className="Project-desc-tag">C#</span>, " with the ", <span className="Project-desc-tag">Unity3d</span>,
@@ -121,13 +110,12 @@ export class Programming extends Component {
 
         <Project
           name="Web Games"
-          role="Lead Programmer"
+          roles="Lead Programmer"
           company={<a target="_blank" href="http://wakerobingames.com/">Wake Robin Games</a>}
           date="March - May 2017"
           tags={['JavaScript', 'HTML5', 'CSS', 'Web', 'Mobile', 'Game']}
-          onTagClick = {this.onTagClick}
-          tagStates = {this.state.tags}
-          links={[]}
+          onTagClick={this.onTagClick}
+          tagStates={this.state.tags}
           desc={["I programmed a series of ", <span className="Project-desc-tag">JavaScript</span>, " ", <span className="Project-desc-tag">web</span>, " ", 
           <span className="Project-desc-tag">games</span>, " using the ", 
           <span className="Project-desc-tag">HTML5</span>, " canvas. They were optimized to run smoothly on ",
@@ -136,37 +124,34 @@ export class Programming extends Component {
 
         <Project
           name="TOCS Archive"
-          role="Project Lead, Developer"
+          roles="Project Lead, Developer"
           company={<a target="_blank" href="http://cass.oregonstate.edu/">CASS</a>}
           date="April 2015 - June 2016"
           tags={['SQL', 'SSIS', 'Python', 'SSMS']}
-          onTagClick = {this.onTagClick}
-          tagStates = {this.state.tags}
-          links={[]}
+          onTagClick={this.onTagClick}
+          tagStates={this.state.tags}
           desc={["I created an archive process for four 1,000,000+ row tables in a ", <span className="Project-desc-tag">SQL</span>, "Server database with ", <span className="Project-desc-tag">SQL</span>, " and ", <span className="Project-desc-tag">SSIS</span>, " processes that is currently in production at ODOT. I then lead and mentored a team of four student developers through the next phase in a scrum-like environment to extend the process to more than 200 other tables. I was involved with drafting the requirements with clients and helped draft the project budget. I utilized metaprogramming and generated many of the ", <span className="Project-desc-tag">SQL</span>, " scripts with ", <span className="Project-desc-tag">Python</span>, "."]}
         />
 
         <Project
           name={["Personal Website ", <i>(You're on it right now!)</i>]}
-          role="Designer, Developer"
+          roles="Designer, Developer"
           company=""
           date="May 2017"
           tags={['JavaScript', 'ReactJS', 'CSS', 'Web']}
-          onTagClick = {this.onTagClick}
-          tagStates = {this.state.tags}
-          links={[]}
-          desc={["I've rebuilt this site many times over the years as a way to apply the lessons I've learned with UX, design, and ", <span className="Project-desc-tag">web</span>, " technologies. This latest incarnation was created with ", <span className="Project-desc-tag">ReactJS</span>, ". (TODO: Why ReactJS) This 'Programming Resume' page is the most fun one since it includes the smart tagging feature. I tried my best to make this site feel fun and professional and work on any resolution."]}
+          onTagClick={this.onTagClick}
+          tagStates={this.state.tags}
+          desc={["I've rebuilt this site many times over the years as a way to apply the lessons I've learned with UX, design, and ", <span className="Project-desc-tag">web</span>, " technologies. This latest incarnation was created with ", <span className="Project-desc-tag">ReactJS</span>, " to take advantage of its declarative integration of JS and the DOM. This 'Programming Resume' page is the most fun one since it includes the smart tagging feature. I tried my best to make this site feel fun and professional and work on any resolution."]}
         />
 
         <Project
           name="Other Game Development"
-          role="Programmer, Designer, Art Roles"
+          roles="Programmer, Designer, Art Roles"
           company=""
           date="2006 - Present"
           tags={['C#', 'Unity3d', 'JavaScript', 'ActionScript', 'Web', 'Game']}
-          onTagClick = {this.onTagClick}
-          tagStates = {this.state.tags}
-          links={[]}
+          onTagClick={this.onTagClick}
+          tagStates={this.state.tags}
           desc={["Making ", <span className="Project-desc-tag">games</span>, " has been a long-time hobby of mine, and it's how I started programming in the first place. Publishing ", <span className="Project-desc-tag">game</span>, " after ", <span className="Project-desc-tag">game</span>, " online has helped me understand working through full project life-cycles, customer feedback, and creating polished user experiences."]}
         />
         

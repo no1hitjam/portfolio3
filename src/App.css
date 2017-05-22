@@ -11,7 +11,7 @@ a {
 
 h3 {
   font-size: 1.7em;
-  color: #379F7A;
+  color: #06b699;
   margin-top: .3em;
   margin-bottom: 1.5em;
 }
@@ -28,7 +28,7 @@ button:focus{
 }
 
 #App-header {
-  background-color: #379F7A;
+  background-color: #06b699;
   line-height: 2.3em;
   padding: .5em;
   margin: .7em;

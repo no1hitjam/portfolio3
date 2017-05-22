@@ -17,7 +17,6 @@ class Game extends Component {
     });
 
     const links = this.props.links.map((val, idx) => {
-      const ltext = idx > 0 ? ' l' + (idx + 1) : '';
       return (
         <td>{val}</td>
       )

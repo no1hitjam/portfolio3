@@ -4,7 +4,6 @@ import { HashLink } from 'react-router-hash-link';
 
 import './Home.css';
 
-import instagramImg from './img/instagram.png';
 
 import gramImg1 from './img/gram-guitar.jpg';
 import gramImg2 from './img/gram-sketch.jpg';
@@ -12,7 +11,6 @@ import gramImg3 from './img/gram-garden.jpg';
 
 import canvasserImg from './img/home-canvasser.jpg';
 import actionNewsImg from './img/home-actionnews.jpg';
-import jacksonImg from './img/jackson.jpg';
 
 export class Home extends Component {
   render() {
